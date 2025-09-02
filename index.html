@@ -47,11 +47,14 @@
       padding-bottom: 5px;
     }
     .song-review {
-      margin-bottom: 40px;
+      margin-bottom: 60px;
     }
     .song-meta {
       font-style: italic;
       color: #87CEFA;
+    }
+    .youtube-video {
+      margin-top: 10px;
     }
   </style>
 </head>
@@ -60,14 +63,14 @@
 
   <div class="container">
     <!-- LEFT SIDEBAR -->
-   <div class="sidebar">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Karl_Marx_001.jpg" alt="Karl Marx">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Friedrich_Engels_portrait.jpg" alt="Friedrich Engels">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Vladimir_Lenin.jpg" alt="Vladimir Lenin">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Joseph_Stalin_1943.jpg" alt="Joseph Stalin">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Mao_Zedong_portrait.jpg" alt="Mao Zedong">
-</div>
-
+    <div class="sidebar">
+      <!-- Black-and-white communist leaders -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Karl_Marx_001.jpg/150px-Karl_Marx_001.jpg" alt="Karl Marx">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Friedrich_Engels_portrait_%28cropped%29.jpg/150px-Friedrich_Engels_portrait_%28cropped%29.jpg" alt="Friedrich Engels">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Vladimir_Lenin.jpg/150px-Vladimir_Lenin.jpg" alt="Vladimir Lenin">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Joseph_Stalin_1943_cropped.jpg/150px-Joseph_Stalin_1943_cropped.jpg" alt="Joseph Stalin">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Mao_Zedong_portrait.jpg/150px-Mao_Zedong_portrait.jpg" alt="Mao Zedong">
+    </div>
 
     <!-- MAIN CONTENT -->
     <div class="content">
@@ -83,6 +86,16 @@
           what stands out in the instrumentation, lyrics, or production.
         </p>
         <p><strong>Rating:</strong> ★★★★☆ (4/5)</p>
+
+        <!-- YouTube Embed -->
+        <div class="youtube-video">
+          <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/VIDEO_ID" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
       <!-- ======================
            COPY UNTIL HERE ↑↑↑
@@ -90,17 +103,24 @@
 
       <!-- Example review -->
       <div class="song-review">
-        <h2>Secret Combination (1981)</h2>
-        <p class="song-meta">Album: <strong>Secret Combination</strong> | Genre: <strong>Contemporary RnB</strong></p>
+        <h2>Imagine – John Lennon (1971)</h2>
+        <p class="song-meta">Album: <strong>Imagine</strong> | Genre: <strong>Soft Rock</strong></p>
         <p>
-          timeless simple and happy. vox might work if looking for something happy and soulful.
+          A timeless song that captures the hope for a peaceful world. The simplicity of 
+          the piano line makes the lyrics stand out even more. Still resonates decades later.
         </p>
-        <p><strong>Samplability:</strong> ★★☆☆☆ (2/5)</p>
+        <p><strong>Rating:</strong> ★★★★★ (5/5)</p>
+        <div class="youtube-video">
+          <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/YkgkThdzX-8" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
 
     </div>
   </div>
 </body>
 </html>
-
-
