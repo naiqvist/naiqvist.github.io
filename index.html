@@ -7,62 +7,99 @@
     body {
       font-family: "Times New Roman", Times, serif;
       line-height: 1.6;
-      max-width: 900px;
-      margin: 50px auto;
-      padding: 20px;
+      margin: 0;
+      padding: 0;
       color: #FFFFFF;
       background-color: #000000;
-      background-image: url("https://www.transparenttextures.com/patterns/stardust.png"); /* <-- change this URL for a different texture */
+      background-image: url("https://www.transparenttextures.com/patterns/stardust.png"); /* tiled star texture */
       background-repeat: repeat;
     }
     h1 {
       color: #00FF00;
       text-shadow: 1px 1px 2px #FF00FF;
       text-align: center;
+      margin: 20px;
+    }
+    .container {
+      display: flex;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .sidebar {
+      width: 180px;
+      padding-right: 20px;
+      border-right: 2px solid #444;
+    }
+    .sidebar img {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      border: 2px solid #fff;
+    }
+    .content {
+      flex: 1;
+      padding-left: 20px;
     }
     h2 {
-      color: #FFD700; /* gold headings for each song */
+      color: #FFD700;
       border-bottom: 1px solid #FFD700;
       padding-bottom: 5px;
     }
     .song-review {
-      margin-bottom: 40px; /* space between reviews */
+      margin-bottom: 40px;
     }
     .song-meta {
       font-style: italic;
-      color: #87CEFA; /* light blue for metadata */
+      color: #87CEFA;
     }
   </style>
 </head>
 <body>
   <h1>My Song Reviews</h1>
 
-  <!-- ======================
-       COPY FROM HERE ↓↓↓
-       ====================== -->
-  <div class="song-review">
-    <h2>Song Title – Artist Name (Year)</h2>
-    <p class="song-meta">Album: <strong>Album Name</strong> | Genre: <strong>Genre</strong></p>
-    <p>
-      Your review text goes here. Write about the song, how it makes you feel, 
-      what stands out in the instrumentation, lyrics, or production.
-    </p>
-    <p><strong>Rating:</strong> ★★★★☆ (4/5)</p>
-  </div>
-  <!-- ======================
-       COPY UNTIL HERE ↑↑↑
-       ====================== -->
+  <div class="container">
+    <!-- LEFT SIDEBAR -->
+    <div class="sidebar">
+      <!-- Replace these URLs with any black & white portraits you want -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Karl_Marx_001.jpg/150px-Karl_Marx_001.jpg" alt="Karl Marx">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Friedrich_Engels_portrait_%28cropped%29.jpg/150px-Friedrich_Engels_portrait_%28cropped%29.jpg" alt="Friedrich Engels">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Vladimir_Lenin.jpg/150px-Vladimir_Lenin.jpg" alt="Vladimir Lenin">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Joseph_Stalin_1943_cropped.jpg/150px-Joseph_Stalin_1943_cropped.jpg" alt="Joseph Stalin">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Mao_Zedong_portrait.jpg/150px-Mao_Zedong_portrait.jpg" alt="Mao Zedong">
+    </div>
 
-  <!-- Example of a second song review -->
-  <div class="song-review">
-    <h2>Imagine – John Lennon (1971)</h2>
-    <p class="song-meta">Album: <strong>Imagine</strong> | Genre: <strong>Soft Rock</strong></p>
-    <p>
-      A timeless song that captures the hope for a peaceful world. The simplicity of 
-      the piano line makes the lyrics stand out even more. Still resonates decades later.
-    </p>
-    <p><strong>Rating:</strong> ★★★★★ (5/5)</p>
-  </div>
+    <!-- MAIN CONTENT -->
+    <div class="content">
 
+      <!-- ======================
+           COPY FROM HERE ↓↓↓
+           ====================== -->
+      <div class="song-review">
+        <h2>Song Title – Artist Name (Year)</h2>
+        <p class="song-meta">Album: <strong>Album Name</strong> | Genre: <strong>Genre</strong></p>
+        <p>
+          Your review text goes here. Write about the song, how it makes you feel, 
+          what stands out in the instrumentation, lyrics, or production.
+        </p>
+        <p><strong>Rating:</strong> ★★★★☆ (4/5)</p>
+      </div>
+      <!-- ======================
+           COPY UNTIL HERE ↑↑↑
+           ====================== -->
+
+      <!-- Example review -->
+      <div class="song-review">
+        <h2>Imagine – John Lennon (1971)</h2>
+        <p class="song-meta">Album: <strong>Imagine</strong> | Genre: <strong>Soft Rock</strong></p>
+        <p>
+          A timeless song that captures the hope for a peaceful world. The simplicity of 
+          the piano line makes the lyrics stand out even more. Still resonates decades later.
+        </p>
+        <p><strong>Rating:</strong> ★★★★★ (5/5)</p>
+      </div>
+
+    </div>
+  </div>
 </body>
 </html>
