@@ -2,38 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Simple Website</title>
+  <title>My Song Reviews</title>
   <style>
     body {
       font-family: "Times New Roman", Times, serif;
       line-height: 1.6;
-      max-width: 800px;
+      max-width: 900px;
       margin: 50px auto;
       padding: 20px;
       color: #FFFFFF;
       background-color: #000000;
-      background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+      background-image: url("https://www.transparenttextures.com/patterns/stardust.png"); /* <-- change this URL for a different texture */
       background-repeat: repeat;
     }
-    h1, h2 {
-      font-weight: bold;
-      color: #00FF00; /* neon green headers */
+    h1 {
+      color: #00FF00;
       text-shadow: 1px 1px 2px #FF00FF;
+      text-align: center;
     }
-    a {
-      color: #00FFFF; /* cyan links */
-      text-decoration: underline;
+    h2 {
+      color: #FFD700; /* gold headings for each song */
+      border-bottom: 1px solid #FFD700;
+      padding-bottom: 5px;
+    }
+    .song-review {
+      margin-bottom: 40px; /* space between reviews */
+    }
+    .song-meta {
+      font-style: italic;
+      color: #87CEFA; /* light blue for metadata */
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>This is a simple text-based website. There's no fancy layout, just clean and readable content.</p>
+  <h1>My Song Reviews</h1>
 
-  <h2>About Me</h2>
-  <p>I'm learning how to build websites. This is my very first one!</p>
+  <!-- ======================
+       COPY FROM HERE ↓↓↓
+       ====================== -->
+  <div class="song-review">
+    <h2>Song Title – Artist Name (Year)</h2>
+    <p class="song-meta">Album: <strong>Album Name</strong> | Genre: <strong>Genre</strong></p>
+    <p>
+      Your review text goes here. Write about the song, how it makes you feel, 
+      what stands out in the instrumentation, lyrics, or production.
+    </p>
+    <p><strong>Rating:</strong> ★★★★☆ (4/5)</p>
+  </div>
+  <!-- ======================
+       COPY UNTIL HERE ↑↑↑
+       ====================== -->
 
-  <h2>Contact</h2>
-  <p>You can reach me at <a href="mailto:your@email.com">your@email.com</a>.</p>
+  <!-- Example of a second song review -->
+  <div class="song-review">
+    <h2>Imagine – John Lennon (1971)</h2>
+    <p class="song-meta">Album: <strong>Imagine</strong> | Genre: <strong>Soft Rock</strong></p>
+    <p>
+      A timeless song that captures the hope for a peaceful world. The simplicity of 
+      the piano line makes the lyrics stand out even more. Still resonates decades later.
+    </p>
+    <p><strong>Rating:</strong> ★★★★★ (5/5)</p>
+  </div>
+
 </body>
 </html>
