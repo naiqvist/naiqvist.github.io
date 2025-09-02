@@ -21,33 +21,9 @@
       margin: 20px;
     }
     .container {
-      display: flex;
       max-width: 1100px;
       margin: 0 auto;
       padding: 20px;
-    }
-    /* FIXED SIDEBAR */
-    .sidebar {
-      width: 180px;
-      padding-right: 20px;
-      border-right: 2px solid #444;
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      overflow-y: auto;
-      background-color: rgba(0,0,0,0.85); /* slight transparency */
-    }
-    .sidebar img {
-      display: block;
-      width: 100%;
-      margin-bottom: 15px;
-      border: 2px solid #fff;
-    }
-    /* Add padding-left to main content so it doesn’t go under fixed sidebar */
-    .content {
-      flex: 1;
-      padding-left: 220px; 
     }
     h2 {
       color: #FFD700;
@@ -70,66 +46,46 @@
   <h1>My Song Reviews</h1>
 
   <div class="container">
-    <!-- LEFT FIXED SIDEBAR -->
-<div class="sidebar">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Karl_Marx_001.jpg" alt="Karl Marx">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Friedrich_Engels_portrait.jpg" alt="Friedrich Engels">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Vladimir_Lenin_Ulyanov.jpg" alt="Vladimir Lenin">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Joseph_Stalin_1943.jpg" alt="Joseph Stalin">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Mao_Zedong_portrait.jpg" alt="Mao Zedong">
-</div>
 
+    <div class="song-review">
+      <h2>Song Title – Artist Name (Year)</h2>
+      <p class="song-meta">Album: <strong>Album Name</strong> | Genre: <strong>Genre</strong></p>
+      <p>
+        Your review text goes here. Write about the song, how it makes you feel, 
+        what stands out in the instrumentation, lyrics, or production.
+      </p>
+      <p><strong>Rating:</strong> ★★★★☆ (4/5)</p>
 
-    <!-- MAIN CONTENT -->
-    <div class="content">
-
-      <!-- ======================
-           COPY FROM HERE ↓↓↓
-           ====================== -->
-      <div class="song-review">
-        <h2>Song Title – Artist Name (Year)</h2>
-        <p class="song-meta">Album: <strong>Album Name</strong> | Genre: <strong>Genre</strong></p>
-        <p>
-          Your review text goes here. Write about the song, how it makes you feel, 
-          what stands out in the instrumentation, lyrics, or production.
-        </p>
-        <p><strong>Rating:</strong> ★★★★☆ (4/5)</p>
-
-        <!-- YouTube Embed -->
-        <div class="youtube-video">
-          <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/VIDEO_ID" 
-            title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-          </iframe>
-        </div>
+      <!-- YouTube Embed -->
+      <div class="youtube-video">
+        <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/VIDEO_ID" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
       </div>
-      <!-- ======================
-           COPY UNTIL HERE ↑↑↑
-           ====================== -->
-
-      <!-- Example review -->
-      <div class="song-review">
-        <h2>Imagine – John Lennon (1971)</h2>
-        <p class="song-meta">Album: <strong>Imagine</strong> | Genre: <strong>Soft Rock</strong></p>
-        <p>
-          A timeless song that captures the hope for a peaceful world. The simplicity of 
-          the piano line makes the lyrics stand out even more. Still resonates decades later.
-        </p>
-        <p><strong>Rating:</strong> ★★★★★ (5/5)</p>
-        <div class="youtube-video">
-          <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/YkgkThdzX-8" 
-            title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-
     </div>
+
+    <!-- Example review -->
+    <div class="song-review">
+      <h2>Imagine – John Lennon (1971)</h2>
+      <p class="song-meta">Album: <strong>Imagine</strong> | Genre: <strong>Soft Rock</strong></p>
+      <p>
+        A timeless song that captures the hope for a peaceful world. The simplicity of 
+        the piano line makes the lyrics stand out even more. Still resonates decades later.
+      </p>
+      <p><strong>Rating:</strong> ★★★★★ (5/5)</p>
+      <div class="youtube-video">
+        <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/YkgkThdzX-8" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
   </div>
 </body>
 </html>
-
